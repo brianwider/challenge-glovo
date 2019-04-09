@@ -1,0 +1,113 @@
+// MOBILE FIRST PAGE
+.store-container {
+    padding: 16px 0 0;
+    margin: 0;
+    color: $color_1;
+    text-decoration: none;
+    text-align: left;
+    &:after {
+        display: inline-block;
+        margin: 0 8px;
+        background-color: $background_gray;
+        height: 1px;
+        width: calc(100% - 16px);
+        content: " ";
+    }
+
+    &:last-of-type {
+        &:after {
+            display: none;
+        }
+    }
+
+    .info-container {
+        display: inline-block;
+        margin: 0;
+        padding: 0 16px 16px;
+        .tags {
+            font-size: 10px;
+            padding-bottom: 4px;
+            padding-top: 12px;
+            display: block;
+            .tag-block {
+                margin: 4px 8px 0 0;
+                padding: 2px 6px;
+                background-color: #eaeaea;
+                border-radius: 5px;
+            }
+        }
+
+        .hours {
+            display: block;
+            margin: 8px 0;
+            font-size: 12px;
+            color: $color_2;
+            &.open {
+                color: $success;
+            }
+
+            &.closed {
+                color: $error;
+            }
+
+            .hours-label {
+                margin-left: 8px;
+            }
+
+            .nav-icon-clock {
+                font-size: 14px;
+                margin-left: 4px;
+                vertical-align: sub;
+                &:before {
+                    content: "";
+                    vertical-align: initial;
+                    background: url("../assets/icon-clock.svg") no-repeat;
+                    height: 14px;
+                    width: 14px;
+                    background-size: cover;
+                }
+
+                &.open:before {
+                    background: url("../assets/ic-success.svg") no-repeat;
+                }
+
+                &.closed:before {
+                    background: url("../assets/ic-error.svg") no-repeat;
+                }
+            }
+            [class^="nav-icon-"] {
+                &:before {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .title {
+            font-size: 18px;
+            padding-bottom: 2px;
+        }
+
+        .description {
+            font-size: 13px;
+            color: $color_2;
+        }
+    }
+
+    @media screen and (min-width: 678px) {
+        .info-container {
+            width: calc(100% - 180px);
+            padding: 16px 16px 0;
+            .tags {
+                display: inline-block;
+                padding-bottom: 32px;
+            }
+
+            .hours {
+                display: inline-block;
+                float: right;
+                margin: 0;
+                margin-top: 12px;
+            }
+        }
+    }
+}

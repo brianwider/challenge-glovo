@@ -1,0 +1,29 @@
+.header-container {
+    background-color: $primary;
+    .header {
+        border: 0;
+        position: relative;
+        .nav-bounds {
+            display: block;
+            margin: 0 auto;
+        }
+        .nav-logo {
+            display: inline-block;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            text-indent: -999px;
+            background-image: url("../assets/logo_glovo.svg");
+            background-size: contain;
+            height: 34px;
+            vertical-align: top;
+            margin: 10px 0;
+        }
+
+        @media screen and (max-width: 677px) {
+            .nav-logo {
+                max-width: inherit;
+                width: 20%;
+            }
+        }
+    }
+}

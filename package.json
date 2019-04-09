@@ -1,0 +1,54 @@
+{
+    "name": "frontend-assignment",
+    "version": "1.0.0",
+    "description": "An amazing assigment for Glovo",
+    "main": "app.js",
+    "scripts": {
+        "test": "test",
+        "serve": "webpack && node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Glovo/frontend-assignment.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Glovo/frontend-assignment/issues"
+    },
+    "homepage": "https://github.com/Glovo/frontend-assignment#readme",
+    "dependencies": {
+        "@koa/cors": "^2.2.2",
+        "axios": "^0.18.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.0.0",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "bootstrap-4-grid": "^2.4.1",
+        "css-loader": "^1.0.1",
+        "history": "^4.7.2",
+        "jsonfile": "^4.0.0",
+        "koa": "^2.5.2",
+        "koa-router": "^7.4.0",
+        "koa-send": "^5.0.0",
+        "koa-static": "^5.0.0",
+        "material-ui": "^0.20.2",
+        "moment": "^2.24.0",
+        "node-sass": "^4.9.4",
+        "query-string": "^6.2.0",
+        "querystring": "^0.2.0",
+        "react": "^16.6.0",
+        "react-dom": "^16.6.0",
+        "react-router-dom": "^4.3.1",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.23.1"
+    },
+    "devDependencies": {
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "copy-webpack-plugin": "^5.0.2",
+        "file-loader": "^3.0.1",
+        "webpack-cli": "^3.3.0"
+    }
+}

@@ -1,0 +1,60 @@
+// MOBILE FIRST PAGE
+.result-item {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    margin: 20px 12px;
+    box-shadow: 0 1px 4px 0 gray;
+    transition: all 0.3s ease-in-out;
+    padding-top: 6px;
+    &.open:hover {
+        box-shadow: 0 2px 17px 0 $primary;
+        -webkit-transform: scale(1.12);
+        transform: scale(1.12);
+        -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    &.closed {
+        cursor: default;
+    }
+
+    .image-container {
+        .item-image {
+            border-radius: 4px;
+            width: 60%;
+        }
+    }
+
+    .info-container {
+        width: calc(100% - 130px);
+        display: inline-block;
+        margin: 0;
+        padding: 16px 16px 0;
+        .title {
+            font-size: 18px;
+        }
+    }
+
+    .loading-container .loading-icon {
+        padding: 0;
+    }
+
+    @media screen and (min-width: 678px) {
+        .info-container {
+            width: calc(100% - 180px);
+        }
+    }
+}
