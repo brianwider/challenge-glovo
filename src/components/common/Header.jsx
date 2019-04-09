@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class HeaderAppBar extends Component {
     constructor() {
@@ -10,7 +11,11 @@ class HeaderAppBar extends Component {
             <div className="header-container">
                 <div className="header">
                     <div className="nav-bounds col-lg-10 col-md-10 col-xs-12 col-sm-12">
-                        <a className="nav-logo col-1" href="/" tabIndex={1} />
+                        <NavLink
+                            className="nav-logo col-1"
+                            to="/"
+                            tabIndex={1}
+                        />
                     </div>
                 </div>
             </div>

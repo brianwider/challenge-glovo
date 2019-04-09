@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import { isCategoryOpen } from "../../services/dateService";
 import Loader from "./Loader.jsx";
 
@@ -48,12 +49,12 @@ class Category extends Component {
         const isOpen = this.getCategoryStatus();
         const link = isOpen ? this.state.link : "#";
         return (
-            <a
-                href={link}
+            <NavLink
+                to={link}
                 className={`result-item row ${isOpen ? "open" : "closed"}`}
             >
                 {this.renderContent()}
-            </a>
+            </NavLink>
         );
     }
 }
